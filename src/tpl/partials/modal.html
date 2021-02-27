@@ -1,0 +1,49 @@
+<!-- Modals -->
+
+<div class="modal" id="modal_contact">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close="#modal_contact">
+            <svg class="modal__close-icon">
+                <use xlink:href="#modalClose"></use>
+            </svg>
+        </button>
+
+        <div class="modal__content">
+            <div class="modal__title">Контакты</div>
+            <div class="modal__subtitle">Заполните форму ниже и я свяжусь с вами в ближайшее время!</div>
+
+            <form class="form" action="send.php" method="POST">
+
+                <div class="form__group">
+                    <input class="form__input" name="name" type="text" id="input-name" placeholder="Ваше имя*" required>
+                </div>
+
+                <div class="form__group">
+                    <input class="form__input" name="email" type="email" id="input-email" placeholder="Ваш e-mail*" required>
+                </div>
+
+                <div class="form__group">
+                    <input class="form__input" name="phone" type="tel" id="input-tel" placeholder="Ваш телефон*" required>
+                </div>
+
+                <div class="form__group">
+                    <input class="checkbox" name="checkbox" type="checkbox" placeholder="">
+                    <span class="checkbox__text">Я принимаю условия
+                        <a href="politika-konfidenczialnosti.html">политики конфиденциальности</a> и даю согласие на обработку персональных данных.
+                    </span>
+                </div>
+
+                <div class="modal__btn">
+                    <button class="btn btn--red" id="checkbox__btn" type="submit" disabled="disabled">Отправить</button>
+                </div>
+
+                <div class="contacts contacts--mod">
+                    <a class="contacts__item contacts--modal" href="tel:+79996354568">+79996354568</a>
+                    <a class="contacts__item contacts--modal" href="mailto:vottak0609@yandex.ru">vottak0609@yandex.ru</a>
+                </div>
+
+            </form>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->

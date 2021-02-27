@@ -1,0 +1,51 @@
+.btn {
+    margin-right: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 2rem;
+    background: none;
+    border: 0;
+    border-radius: $radius_sm;
+    box-shadow: $shadow;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: $black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s linear,color .2s linear;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: #ccc;
+
+        &:hover {
+            color: $gray_dark;
+        }
+    }
+
+    @media(max-width: 770px) {
+        margin-right: 0;
+    }
+}
+.btn--red {
+    border: 2px solid $red;
+}
+
+.modal__btn {
+    text-align: center;
+
+    & .btn--red {
+        margin-right: 0;
+    }
+}

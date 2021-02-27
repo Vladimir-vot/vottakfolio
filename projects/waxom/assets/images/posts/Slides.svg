@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96.65" height="15" viewBox="0 0 96.65 15">
+  <g id="Slides" transform="translate(-510.68 -5510)">
+    <circle id="_01" data-name="01" cx="5.02" cy="5.02" r="5.02" transform="translate(510.68 5512.48)" fill="#fff" opacity="0.302"/>
+    <g id="_02" data-name="02" transform="translate(531 5510)" fill="rgba(255,255,255,0)" stroke="#d3c1ad" stroke-linejoin="round" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+    <circle id="_03" data-name="03" cx="5.02" cy="5.02" r="5.02" transform="translate(556.48 5512.48)" fill="#fff" opacity="0.302"/>
+    <circle id="_04" data-name="04" cx="5.02" cy="5.02" r="5.02" transform="translate(576.88 5512.48)" fill="#fff" opacity="0.302"/>
+    <ellipse id="_05" data-name="05" cx="5.03" cy="5.02" rx="5.03" ry="5.02" transform="translate(597.27 5512.48)" fill="#fff" opacity="0.302"/>
+  </g>
+</svg>

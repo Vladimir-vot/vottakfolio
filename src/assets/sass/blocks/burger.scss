@@ -1,0 +1,76 @@
+/* Burger */
+
+.burger {
+    width: 30px;
+    height: 23px;
+    position: relative;
+    padding: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    display: none;
+
+    @media(max-width: 770px) {
+        display: block;
+        &.active {
+            .burger__line {
+                margin: 0;
+                background: $white;
+            }
+        }
+    }
+}
+
+.burger:focus {
+    outline: none;
+}
+
+.burger__line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 3px 0;
+    background: $black;
+    transition: transform .2s ease-out;
+}
+
+.burger__line:nth-child(1) {
+    width: 20px;
+    margin-left: auto;
+}
+
+.burger__line:nth-child(1),
+.burger__line:nth-child(3) {
+    transform-origin: right;
+    transition: width .2s ease-out;
+}
+
+.burger.active
+.burger__line:nth-child(1),
+.burger.active
+.burger__line:nth-child(3) {
+    width: 0;
+}
+
+.burger.active
+.burger__line:nth-child(2),
+.burger.active
+.burger__line:nth-child(4) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform-origin: center;
+}
+
+.burger.active
+.burger__line:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger.active
+.burger__line:nth-child(4) {
+    transform: rotate(-45deg);
+}
+

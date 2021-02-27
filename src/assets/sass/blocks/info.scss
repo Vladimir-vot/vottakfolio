@@ -1,0 +1,28 @@
+.info {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 320px) {
+        flex-direction: column;
+    }
+}
+
+.info__title {
+    margin-right: .5rem;
+    font-size: .8rem;
+    color: $black;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.info__text {
+    font-size: .8rem;
+    color: $blue;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}

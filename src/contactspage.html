@@ -1,0 +1,67 @@
+---
+layout: default
+title: Contacts
+---
+
+
+<div class="content">
+    <div class="contacts__page">
+        <div class="container">
+            <h1 class="content__title">Контакты</h1>
+            <div class="contacts__page__inner">
+                <div class="contacts__page__item" data-aos="fade-right">
+                    <div class="contacts__page__text">
+                        <p>Работаю с 8-00 до 17-00 (по Москве)</p>
+                        <p>Выходной: сб, вс</p>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts__tel">
+                            <svg class="contacts__tel-icon">
+                                <use xlink:href="#tel"></use>
+                            </svg>
+                            <h3 class="contacts__tel__title">Телефон</h3>
+                            <div>
+                                <a class="contacts__item contacts__item--page" href="tel:+79996354568">+79996354568</a>
+                            </div>
+                        </div>
+                        <div class="contacts__mail">
+                            <svg class="contacts__mail-icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                            <h3 class="contacts__mail__title">EMAIL</h3>
+                            <a class="contacts__item contacts__item--page" href="mailto:vottak0609@yandex.ru">vottak0609@yandex.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__page__item" data-aos="fade-left">
+                    <form class="form" action="send.php" method="post">
+
+                        <div class="form__group">
+                            <input class="form__input" name="name" type="text" id="input-name" placeholder="Ваше имя*" required>
+                        </div>
+
+                        <div class="form__group">
+                            <input class="form__input" name="email" type="email" id="input-email" placeholder="Ваш e-mail*" required>
+                        </div>
+
+                        <div class="form__group">
+                            <input class="form__input" name="phone" type="tel" id="input-tel" placeholder="Ваш телефон*" required>
+                        </div>
+
+                        <div class="form__group form__group--contactspage">
+                            <input class="checkbox" name="checkbox" type="checkbox" placeholder="">
+                            <span class="checkbox__text">Я принимаю условия
+                                <a href="politika-konfidenczialnosti.html">политики конфиденциальности</a> и даю согласие на обработку персональных данных.
+                            </span>
+                        </div>
+
+                        <div class="modal__btn">
+                            <button class="btn btn--red" id="checkbox__btn" type="submit" disabled="disabled">Отправить</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

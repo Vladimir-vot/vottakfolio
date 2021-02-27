@@ -1,0 +1,38 @@
+.header {
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  border-radius: $radius;
+  box-shadow: $shadow;
+  background-color: $white;
+
+  @media (max-width: 770px) {
+    margin-top: 0;
+  }
+}
+
+.header-dark {
+  border-radius: 0;
+  transition: background-color 0.2s ease-out;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

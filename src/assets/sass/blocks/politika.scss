@@ -1,0 +1,51 @@
+.date {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: .8rem;
+    color: $gray_dark;
+    font-weight: 600;
+}
+
+.politika__text {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.4;
+}
+
+.politika__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $black;
+    line-height: 1.1;
+
+    @media (max-width: 350px) {
+        font-size: 1.3rem;
+    }
+}
+
+.politika__list {
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.politika__list-item {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.4;
+    position: relative;
+
+    &:before {
+        content: "\2014\a0";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        right: auto;
+        bottom: auto;
+        z-index: 1;
+
+    }
+}

@@ -1,0 +1,30 @@
+.form__group {
+    margin-bottom: 1rem;
+    position: relative;
+
+    & input[type="checkbox"], .checkbox__text:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+}
+
+.checkbox__text {
+    display: block;
+    padding-left: 2rem;
+    font-size: .8rem;
+    color: $black;
+    font-weight: 500;
+    line-height: 1.1;
+
+    & a {
+        color: $blue;
+    }
+
+    & a:hover {
+        color: $red;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
